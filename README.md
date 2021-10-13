@@ -8,6 +8,6 @@ We first made a list of important events in the history of the UAE that we wante
   
 Once we had all the elements, an idea about how to implement them and a wireframe to look back to, we just had to put all the elements together, though this was much harder than what we anticipated.  
   
-The first part of the webpage, which appears when the page first loads, consists of a brown background with particles which signifies the presence of sand. For the particles, we made use of a Javascript library which allowed us to create these particles, play with their positioning and also have some interactivity where newer particles would appear and accumulate upon clicking on the screen. We were also able to use JavaScript to fade out the background for this part of the webpage as we scrolled down to the rest of the page.  
+The first part of the webpage, which appears when the page first loads, consists of a brown background with particles which signifies the presence of sand. For the particles, we made use of a [Javascript library](https://github.com/VincentGarreau/particles.js?fbclid=IwAR0Dd8qIfWN6RI1Zk06vzH5GWA0Z0ZijwnoIgFmIXwQyFFCcWBUzLtt8myU) which allowed us to create these particles, play with their positioning and also have some interactivity where newer particles would appear and accumulate upon clicking on the screen. We were also able to use JavaScript to fade out the background for this part of the webpage as we scrolled down to the rest of the page.  
   
 
