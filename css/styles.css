@@ -65,12 +65,12 @@ body{
 .visible {
     visibility: visible;
     opacity: 1;
-    transition: opacity 2s linear;
+    transition: opacity .5s linear;
 }
 .hidden {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
+    transition: visibility 0s .5s, opacity .5s linear;
 }
 
 .majorYear{
@@ -246,7 +246,7 @@ body{
     height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(300% - 55%); /*How far down page should element be*/
 }
-#trucial{
+.trucialFlag{
     width: 200px;
     position: sticky;
     top: 60%; /*How far down the view should it stick (0 at top, page height at bottom)*/
@@ -258,7 +258,7 @@ body{
     height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(300% - 35%); /*How far down page should element be*/
 }
-#british{
+.british{
     width: 50px;
     position: sticky;
     top: 78%; /*How far down the view should it stick (0 at top, page height at bottom)*/
@@ -280,7 +280,7 @@ body{
     width:80%;
     left: 20%;
     height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
-    top: calc(300% - 35%); /*How far down page should element be*/
+    top: calc(700% - 55%); /*How far down page should element be*/
 }
 #alArab{
     width: 350px;
@@ -292,7 +292,7 @@ body{
     width:95%;
     left: 5%;
     height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
-    top: calc(300% - 35%); /*How far down page should element be*/
+    top: calc(700% - 35%); /*How far down page should element be*/
 }
 #khalifa{
     width: 450px;
@@ -304,7 +304,7 @@ body{
     width:100%;
     left: 0%;
     height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
-    top: calc(300% - 35%); /*How far down page should element be*/
+    top: calc(700% - 5%); /*How far down page should element be*/
 }
 #emiratesTower{
     width: 250px;
@@ -313,39 +313,55 @@ body{
 }
 
 #gatePosition{
-    width: 40%;
-    left: 60%;
-    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
-    top: calc(300% - 35%); /*How far down page should element be*/
+    width:95%;
+    right: 5%;
+    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(700% - 15%); /*How far down page should element be*/
 }
 #gate{
     width: 300px;
+    float:right;
     position: sticky;
     top: 60%; /*How far down the view should it stick (0 at top, page height at bottom)*/
 }
 
 #mosquePosition{
-    width:60%;
-    left: 40%;
-    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
-    top: calc(300% - 35%); /*How far down page should element be*/
+    width: 80%;
+    right: 20%;
+    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(700% - 25%); /*How far down page should element be*/
 }
 #mosque{
     width: 450px;
+    float:right;
     position: sticky;
     top: 65%; /*How far down the view should it stick (0 at top, page height at bottom)*/
 }
 
 #lourvePosition{
-    width:60%;
-    left: 40%;
-    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
-    top: calc(300% - 35%); /*How far down page should element be*/
+    width:95%;
+    right: 5%;
+    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(700% + 15%); /*How far down page should element be*/
 }
 #lourve{
-    width: 50px;
+    width: 600px;
+    float:right;
     position: sticky;
-    top: 78%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+    top: 80%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#burjMoPosition{
+    width: 85%;
+    right: 15%;
+    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(700% - 15%); /*How far down page should element be*/
+}
+#burjMo{
+    width: 125px;
+    float:right;
+    position: sticky;
+    top: 40%; /*How far down the view should it stick (0 at top, page height at bottom)*/
 }
 
 
@@ -359,4 +375,12 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 35%;
+}
+
+#zayed{
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
 }
