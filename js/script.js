@@ -5,14 +5,23 @@ const [redPurpleSky, greenPurpleSky, bluePurpleSky] = [46, 26, 71];
 
 let body = document.body;
 let sand = document.getElementById('sand');
+let splash = document.getElementById('splashscreen');
 
+document.getElementById("first-slide").onscroll = function() {fadeSplash()};
 
+function fadeSplash() {
+  splash.fadeOut(500);
+}
 
-//Set all element pages height
-let nomadPage = document.getElementById('nomadPage');
-nomadPage.height=body.offsetHeight;
+window.addEventListener('load', function () {
 
+  //Set all element pages height
+  var elementPages = document.getElementsByClassName("stickyPage");
+  for (var i = 0; i < elementPages.length; i++) {
+    elementPages[i].style.height=window.innerHeight + "px";
+  }
 
+})
 
 window.addEventListener('scroll', () => {
 
@@ -43,8 +52,11 @@ window.addEventListener('scroll', () => {
 
 
 
+
+
   // text fade in/out 
 
-  console.log(scroll/height)
+  // console.log(scroll/height)
 
 })
+

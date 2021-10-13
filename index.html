@@ -11,7 +11,8 @@
   <link rel="icon" href="images/chicken.png"/>
   <link rel="stylesheet" href="css/particles.css" />
   <link rel="stylesheet" href="css/styles.css" />
-
+  <!-- J-query -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Font -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -21,10 +22,20 @@
 </head>
 
 <body>
+  <div id="top"></div>
+  
+  <div id="splashscreen">
+    <div>
+    <h1 id="textOne" class="text-center">First, there was sand...</h1> 
+    </div>
+  </div>
   <div id="particles-js"></div>
-  <div id="sand"></div>
+  <div id="snarky-text"><h1 class="text-center">THEN... UAE!!</h1></div>
+  
+  
 
 <div id="fireworks-js"></div>
+
   <!-- <div class="slide">
     <div id="first-slide">
       <h1 id="textOne">Early UAE</h1>
@@ -35,23 +46,96 @@
 
 
 
-  <div id="first-slide">
-    <h1 id="textOne">Early UAE</h1>
-    <!-- <div id="nomadHolder">
-      <div></div>
-      <img id="nomad" src="images/nomad.svg"/>
-    </div> -->
+  <div class="slide" id="first-slide">
+    <div class="majorYear">Pre 19th Century</div>
+    <div class="majorText">Early UAE</div>
+    <div class="majorDescription">Several nomadic tribes occupy the area. Trading forts are created around areas of importance such as the well on Abu Dhabi island with Qasr Al Hosn</div>
+  </div>
+  <div class="slide" id="second-slide">
+    <div class="majorYear">1820</div>
+    <div class="majorText">Trucial States are formed</div>
+    <div class="majorDescription">This was signed between the British Government and the Sheikhs of Ras Al Khaimah, Umm Al Quwain, Ajman, Sharjah. This area of the Gulf Coast became known as the Trucial Coast</div>
+  </div>
+  <div class="slide" id="third-slide">
+    <div class="majorYear">1966</div>
+    <div class="majorText">Sheikh Zayed becomes the ruler of Abu Dhabi</div>
+  </div>
+  <div class="slide" id="fourth-slide">
+    <div class="majorYear">1968</div>
+    <h1 class="majorText">British PM orders the beginning of the withdrawal of British forces
+    </h1>
+  </div>
+  <div class="slide" id="fifth-slide">
+    <div class="majorYear">1971</div>
+    <div class="majorText">United Arab Emirates is formed</div>
+    <img id="emirates" src="images/emirates.svg"/>
+  </div>
+  <div class="slide" id="sixth-slide">
+    <div class="majorYear">1986</div>
+    <div class="majorText">Sheikh Zayed Bin-Sultan Al Nuhayyan is re-elected as UAE president - his fourth term</div>
+  </div>
+  <div class="slide" id="seventh-slide">
+    <div class="majorYear">1996</div>
+    <div class="majorText">The UAE celebrates its 25th National Day and Sheikh Zayed's 30th anniversary as Ruler of Abu Dhabi</div>
+  </div>
+  <div class="slide" id="eighth-slide">
+    <div class="minorYearLeft">1999</div>
+    <div class="minorTextLeft">Burj Al Arab Opens.</div>
+    <div class="minorYear">2000</div>
+    <div class="minorText">Emirates Towers opens.</div>
+    <div class="minorYearLeft">2007</div>
+    <div class="minorTextLeft">Sheikh Zayed Grand Mosque opens.</div>
+    <div class="minorYear">2017</div>
+    <div class="minorText">The Louvre opens in Abu Dhabi.</div>
+  </div>
+  <div class="slide" id="ninth-slide">
+    <div class="minorYearLeft">2010</div>
+    <div class="minorTextLeft">ALDAR Opens.</div>
+    <div class="minorYear">2010</div>
+    <div class="minorText">The Burj Khalifa opens as the tallest building in the world.</div>
+    <div class="minorYearLeft">2014</div>
+    <div class="minorTextLeft">WTCAD opens Abu Dhabi.</div>
+    <div class="minorYear">2017</div>
+    <div class="minorText">The Louvre opens in Abu Dhabi.</div>
   </div>
 
-  <div id="nomadPage">
-    <div id="nomadPosition">
-      <img id="nomad" src="images/nomad.svg"/>
+
+  <div id="sand"></div>
+  
+  <!-------------------- Sticky Elements ------------------------>
+
+  <!-- Qasr Al Hosn -->
+  <div class="stickyPage">
+    <div class="stickyPosition" id="qasrPosition">
+      <img id="qasr" src="images/Qasr Al-Hosn.svg"/>
     </div>
   </div>
+  <!-- Flags -->
+  <div class="stickyPage">
+    <div class="stickyPosition" id="trucialPosition">
+      <img id="trucial" src="images/trucialstatesflag.svg"/>
+      <img id="trucial" src="images/ukflag.svg"/>
+    </div>
+  </div>
+  <!-- People -->
+  <div class="stickyPage">
+    <div class="stickyPosition" id="nomadPosition">
+      <img class="nomad" id="nomadOne" src="images/nomad.svg"/>
+      <img class="nomad" id="nomadTwo" src="images/nomad.svg"/>
+      <img id="camel" src="images/Camel.svg"/>
+      <img class="nomad" id="nomadThree" src="images/nomad.svg"/>
+      <img class="nomad" id="nomadFour" src="images/nomad.svg"/>
+    </div>
+  </div>
+  <!-- English Men -->
+  <div class="stickyPage">
+    <div class="stickyPosition" id="britishPosition">
+      <img id="british" src="images/britisher.svg"/>
+      <img id="british" src="images/britisher.svg"/>
+    </div>
+  </div>
+
   
-  <!-- <div id="stickyWrapper"> -->
-    <!-- <img id="nomad" src="images/nomad.svg"/> -->
-  <!-- </div> -->
 
   <!-- sand -->
   <!-- old UAE Qasr Al-hosn -->
@@ -62,6 +146,22 @@
   <script src="js/script.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/fireworks.js"></script>
+
+  
+<script>
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 200 ) {
+   
+    $('#splashscreen').fadeOut(500);
+    $('#snarky-text').fadeIn(500);
+  } else {
+    $('#splashscreen').fadeIn(500);
+    $('#snarky-text').fadeOut(500);
+  }
+}); 
+</script>
+
+
 </body>
 
 

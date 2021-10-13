@@ -5,10 +5,10 @@
 particlesJS("fireworks-js", {
   "particles": {
     "number": {
-      "value": 0,
+      "value": 1,
       "density": {
         "enable": true,
-        "value_area": 100,
+        "value_area": 10,
       }
     },
     "color": {
@@ -76,7 +76,7 @@ particlesJS("fireworks-js", {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "bubble"
+        "mode": ["repulse", "bubble"]
       },
       "onclick": {
         "enable": true,
@@ -103,7 +103,7 @@ particlesJS("fireworks-js", {
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 40
+        "particles_nb": 10
       },
       "remove": {
         "particles_nb": 2

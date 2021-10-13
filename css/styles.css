@@ -1,7 +1,7 @@
 body{
     margin:0px;
     padding:0;
-    height:4000px;
+    height:7000px;
     font-family: 'Rosarivo', serif;
     background-color: rgb(188, 225, 227)
 }
@@ -24,6 +24,30 @@ body{
 .text-right{
 
 }
+.text-center{
+    text-align: center;
+    line-height: 200px;
+}
+
+#top {
+   position:absolute;
+}
+
+#splashscreen {
+    width:100%;
+    height:82%;  /*Height of the page*/
+    position:absolute;
+    top:0;
+    background-image: linear-gradient(#EDC9AF,#B58971);
+    /* background-color:rgb(181, 137, 113); */
+}
+
+#snarky-text {
+    visibility: hidden;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20em;
+}
 
 
 #sand{
@@ -38,11 +62,119 @@ body{
   
 }
 
-#first-slide{
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.majorYear{
+    padding-top: .5em;
+    padding-left: 5%;
+    font-size: 1.7em;
+    font-weight:bold;
+}
+.majorText{
+    padding-top: .5em;
+    padding-left: 5%;
+    font-size: 1em;
+    font-weight:bold;
+    width:50%;
+}
+.majorDescription{
+    padding-top: .5em;
+    padding-left: 5%;
+    font-size: .6em;
+    font-weight:bold;
+    width:50%;
+}
+.minorYear{
+    text-align:right;
+    padding-top: .5em;
+    padding-right: 5%;
+    font-size: 1.2em;
+    font-weight:bold;
+}
+.minorText{
+    padding-left:45%;
+    text-align:right;
+    padding-top: .5em;
+    padding-right: 5%;
+    font-size: .7em;
+    font-weight:bold;
+    width:50%;
+}
+.minorDescription{
+    padding-left:45%;
+    text-align:right;
+    padding-top: .5em;
+    padding-right: 5%;
+    font-size: .6em;
+    font-weight:bold;
+    width:50%;
+}
+.minorYearLeft{
+    text-align:left;
+    padding-top: .5em;
+    padding-left: 5%;
+    font-size: 1.2em;
+    font-weight:bold;
+}
+.minorTextLeft{
+    padding-left:45%;
+    text-align:left;
+    padding-top: .5em;
+    padding-left: 5%;
+    font-size: .7em;
+    font-weight:bold;
+    width:50%;
+}
+.minorDescriptionLeft{
+    text-align:left;
+    padding-top: .5em;
+    padding-left: 5%;
+    font-size: .6em;
+    font-weight:bold;
+    width:50%;
+}
+.slide{
     position: absolute;
     height: 100%;
     width:100%;
+    font-size:2em;
+    font-weight:bold;
+}
+#first-slide{
     top: calc(100% * 1);
+}
+#second-slide{
+    top: calc(100% * 2);
+}
+#third-slide{
+    top: calc(100% * 3);
+}
+#fourth-slide{
+    top: calc(100% * 4);
+}
+#fifth-slide{
+    top: calc(100% * 5);
+}
+#sixth-slide{
+    top: calc(100% * 6);
+}
+#seventh-slide{
+    top: calc(100% * 7);
+}
+#eighth-slide{
+    top: calc(100% * 8);
+}
+#ninth-slide{
+    top: calc(100% * 9);
 }
 
 /* #second-slide{
@@ -52,9 +184,6 @@ body{
     top: calc(100% * 2);
 } */
 
-#textOne{
-    padding: 50px;
-}
 /* 
 #nomadHolder {
     position: relative;
@@ -62,21 +191,78 @@ body{
     width: 100%;
     bottom:0;
 } */
-#nomadPage{
+
+.stickyPage{
     width:100%;
-    height:800px;  /*Height of the page*/
-    /* position:absolute; */
+    position:absolute;
+    top:0;
+    height: 800px;
 }
-#nomadPosition{
-    width:100%;
-    left: 10%;
-    height: 200%;  /*How long should they be stuck before they go away (100% = 1 slide)*/
-    top: calc(200% - 200px); /*How far down page should element be*/
+.stickyPosition{
     position:relative;
 }
-#nomad{
-    width: 150px;
+
+
+/* Specific Image Positioning and Sizing */
+
+#nomadPosition{
+    width:95%;
+    left: 5%;
+    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(200% - 35%); /*How far down page should element be*/
+}
+.nomad{
+    width: 80px; /*Width relative to position element's width above*/
     position: sticky;
-    /* bottom: 10%; */
-    top: 65%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+    top: 80%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+#camel{
+    width: 160px;
+    position: sticky;
+    top: 80%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#qasrPosition{
+    width:95%;
+    right: 5%;
+    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(200% - 55%); /*How far down page should element be*/
+}
+#qasr{
+    width: 600px;
+    float:right;
+    position: sticky;
+    top: 45%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#trucialPosition{
+    width:85%;
+    left: 15%;
+    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(300% - 55%); /*How far down page should element be*/
+}
+#trucial{
+    width: 200px;
+    position: sticky;
+    top: 60%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#britishPosition{
+    width:85%;
+    left: 40%;
+    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(300% - 35%); /*How far down page should element be*/
+}
+#british{
+    width: 50px;
+    position: sticky;
+    top: 78%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#emirates{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
 }
