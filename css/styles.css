@@ -126,13 +126,21 @@ body{
     font-weight:bold;
 }
 .minorTextLeft{
-    padding-left:45%;
     text-align:left;
     padding-top: .5em;
     padding-left: 5%;
     font-size: .7em;
     font-weight:bold;
     width:50%;
+}
+/* only for 1986 event */
+.minorTextLeft2{ 
+    text-align:left;
+    padding-top: .5em;
+    padding-left: 5%;
+    font-size: .7em;
+    font-weight:bold;
+    width:40%;
 }
 .minorDescriptionLeft{
     text-align:left;
@@ -172,9 +180,6 @@ body{
 }
 #eighth-slide{
     top: calc(100% * 8);
-}
-#ninth-slide{
-    top: calc(100% * 9);
 }
 
 /* #second-slide{
@@ -248,7 +253,7 @@ body{
 }
 
 #britishPosition{
-    width:85%;
+    width:60%;
     left: 40%;
     height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(300% - 35%); /*How far down page should element be*/
@@ -259,10 +264,99 @@ body{
     top: 78%; /*How far down the view should it stick (0 at top, page height at bottom)*/
 }
 
+#uaeFlagPosition{
+    width: 77%;
+    left: 21%;
+    height: calc(7000px - 100% - 40%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(600% - 40%); /*How far down page should element be*/
+}
+#uaeFlag{
+    width: 200px;
+    position: sticky;
+    top: 60%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#alArabPosition{
+    width:80%;
+    left: 20%;
+    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(300% - 35%); /*How far down page should element be*/
+}
+#alArab{
+    width: 350px;
+    position: sticky;
+    top: 40%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#khalifaPosition{
+    width:95%;
+    left: 5%;
+    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(300% - 35%); /*How far down page should element be*/
+}
+#khalifa{
+    width: 450px;
+    position: sticky;
+    top: 15%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#emiratesTowerPosition{
+    width:100%;
+    left: 0%;
+    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(300% - 35%); /*How far down page should element be*/
+}
+#emiratesTower{
+    width: 250px;
+    position: sticky;
+    top: 50%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#gatePosition{
+    width: 40%;
+    left: 60%;
+    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(300% - 35%); /*How far down page should element be*/
+}
+#gate{
+    width: 300px;
+    position: sticky;
+    top: 60%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#mosquePosition{
+    width:60%;
+    left: 40%;
+    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(300% - 35%); /*How far down page should element be*/
+}
+#mosque{
+    width: 450px;
+    position: sticky;
+    top: 65%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+#lourvePosition{
+    width:60%;
+    left: 40%;
+    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(300% - 35%); /*How far down page should element be*/
+}
+#lourve{
+    width: 50px;
+    position: sticky;
+    top: 78%; /*How far down the view should it stick (0 at top, page height at bottom)*/
+}
+
+
+
+
+
+
 #emirates{
+    padding-top: 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-
+    width: 35%;
 }

@@ -1,7 +1,7 @@
 const [redSand, greenSand, blueSand] = [181, 137, 113];
 const [redBlueSky, greenBlueSky, blueBlueSky] = [188, 225, 227];
 const [redOrangeSky, greenOrangeSky, blueOrangeSky] = [196, 148, 116];
-const [redPurpleSky, greenPurpleSky, bluePurpleSky] = [46, 26, 71];
+const [redPurpleSky, greenPurpleSky, bluePurpleSky] = [46, 86, 130];
 
 let body = document.body;
 let sand = document.getElementById('sand');
