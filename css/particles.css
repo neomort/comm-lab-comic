@@ -1,0 +1,17 @@
+canvas {
+  display: flex;
+  vertical-align: top;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#fireworks-js {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  top: calc(100% * 2);
+}

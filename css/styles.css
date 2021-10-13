@@ -1,11 +1,18 @@
 body{
-    margin:0;
+    margin:0px;
     padding:0;
+    height:4000px;
     font-family: 'Rosarivo', serif;
+    background-color: rgb(188, 225, 227)
 }
-.building{
 
+
+/* rgb(188, 225, 227) */
+.building{
+    position:absolute;
+    bottom: 0;
 }
+
 .text_box{
 
 }
@@ -23,10 +30,53 @@ body{
     position: fixed;
     bottom:0;
     width: 100%;
-    height:18%; /* (200/1080) */
+    height:18%; 
     background-color:rgb(181, 137, 113);
 }
 
 .ground{
   
+}
+
+#first-slide{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    top: calc(100% * 1);
+}
+
+/* #second-slide{
+    position: absolute;
+    height:100%;
+    padding: 50px;
+    top: calc(100% * 2);
+} */
+
+#textOne{
+    padding: 50px;
+}
+/* 
+#nomadHolder {
+    position: relative;
+    background-color:blue;
+    width: 100%;
+    bottom:0;
+} */
+#nomadPage{
+    width:100%;
+    height:800px;  /*Height of the page*/
+    /* position:absolute; */
+}
+#nomadPosition{
+    width:100%;
+    left: 10%;
+    height: 200%;  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    top: calc(200% - 200px); /*How far down page should element be*/
+    position:relative;
+}
+#nomad{
+    width: 150px;
+    position: sticky;
+    /* bottom: 10%; */
+    top: 65%; /*How far down the view should it stick (0 at top, page height at bottom)*/
 }
