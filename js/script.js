@@ -27,8 +27,6 @@ let emiratesTower = document.getElementById('emiratesTower');
 let burjMo = document.getElementById('burjMo');
 let khalifa = document.getElementById('khalifa');
 
-//Set body height
-body.style.height = window.innerHeight*8 + "px";
 
 //Dynamically set heights
 
@@ -46,6 +44,10 @@ window.addEventListener('load', function () {
   for (var i = 0; i < elementPages.length; i++) {
     elementPages[i].style.height=window.innerHeight + "px";
   }
+
+  //Set body height
+  body.style.height = window.innerHeight*8 + "px";
+
 
 })
 

@@ -12,10 +12,10 @@ particlesJS("fireworks-js", {
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": ["#ff0000","#00ff00","#ffffff"]
     },
     "shape": {
-      "type": "star",
+      "type": "circle",
       "stroke": {
         "width": 0,
         "color": "#000000"
