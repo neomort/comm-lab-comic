@@ -178,9 +178,6 @@ body{
 #seventh-slide{
     top: calc(100% * 7);
 }
-#eighth-slide{
-    top: calc(100% * 8);
-}
 
 /* #second-slide{
     position: absolute;
@@ -213,7 +210,7 @@ body{
 #nomadPosition{
     width:95%;
     left: 5%;
-    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (200% - 35%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(200% - 35%); /*How far down page should element be*/
 }
 .nomad{
@@ -230,7 +227,7 @@ body{
 #qasrPosition{
     width:95%;
     right: 5%;
-    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (200% - 55%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(200% - 55%); /*How far down page should element be*/
 }
 #qasr{
@@ -243,7 +240,7 @@ body{
 #trucialPosition{
     width:85%;
     left: 15%;
-    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (300% - 55%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(300% - 55%); /*How far down page should element be*/
 }
 .trucialFlag{
@@ -255,7 +252,7 @@ body{
 #britishPosition{
     width:60%;
     left: 40%;
-    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (300% - 35%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(300% - 35%); /*How far down page should element be*/
 }
 .british{
@@ -267,7 +264,7 @@ body{
 #uaeFlagPosition{
     width: 77%;
     left: 21%;
-    height: calc(7000px - 100% - 40%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (600% - 45%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(600% - 40%); /*How far down page should element be*/
 }
 #uaeFlag{
@@ -279,7 +276,7 @@ body{
 #alArabPosition{
     width:80%;
     left: 20%;
-    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (700% - 55%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(700% - 55%); /*How far down page should element be*/
 }
 #alArab{
@@ -291,7 +288,7 @@ body{
 #khalifaPosition{
     width:95%;
     left: 5%;
-    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (700% - 35%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(700% - 35%); /*How far down page should element be*/
 }
 #khalifa{
@@ -303,7 +300,7 @@ body{
 #emiratesTowerPosition{
     width:100%;
     left: 0%;
-    height: calc(7000px - 100% - 35%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (700% - 5%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(700% - 5%); /*How far down page should element be*/
 }
 #emiratesTower{
@@ -315,7 +312,7 @@ body{
 #gatePosition{
     width:95%;
     right: 5%;
-    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (700% - 15%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(700% - 15%); /*How far down page should element be*/
 }
 #gate{
@@ -328,7 +325,7 @@ body{
 #mosquePosition{
     width: 80%;
     right: 20%;
-    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (700% - 25%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(700% - 25%); /*How far down page should element be*/
 }
 #mosque{
@@ -341,7 +338,7 @@ body{
 #lourvePosition{
     width:95%;
     right: 5%;
-    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (700% + 15%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(700% + 15%); /*How far down page should element be*/
 }
 #lourve{
@@ -354,7 +351,7 @@ body{
 #burjMoPosition{
     width: 85%;
     right: 15%;
-    height: calc(7000px - 100% - 55%);  /*How long should they be stuck before they go away (100% = 1 slide)*/
+    height: calc(800% - (700% - 15%));  /*How long should they be stuck before they go away (100% = 1 slide)*/
     top: calc(700% - 15%); /*How far down page should element be*/
 }
 #burjMo{

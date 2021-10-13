@@ -7,6 +7,32 @@ let body = document.body;
 let sand = document.getElementById('sand');
 let splash = document.getElementById('splashscreen');
 
+
+let qasr = document.getElementById('qasr');
+let nomadOne = document.getElementById('nomadOne');
+let nomadTwo = document.getElementById('nomadTwo');
+let nomadThree = document.getElementById('nomadThree');
+let nomadFour = document.getElementById('nomadFour');
+let camel = document.getElementById('camel');
+let britishOne = document.getElementById('britishOne');
+let britishTwo = document.getElementById('britishTwo');
+let trucial = document.getElementById('trucial');
+let british = document.getElementById('uk');
+let uae = document.getElementById('uaeFlag');
+let mosque = document.getElementById('mosque');
+let lourve = document.getElementById('lourve');
+let gate = document.getElementById('gate');
+let alArab = document.getElementById('alArab');
+let emiratesTower = document.getElementById('emiratesTower');
+let burjMo = document.getElementById('burjMo');
+let khalifa = document.getElementById('khalifa');
+
+//Set body height
+body.style.height = window.innerHeight*8 + "px";
+
+//Dynamically set heights
+
+
 document.getElementById("first-slide").onscroll = function() {fadeSplash()};
 
 function fadeSplash() {
@@ -48,17 +74,6 @@ window.addEventListener('scroll', () => {
 
   //Sand shrink past first slide
   let scroll = (window.scrollY || window.pageYOffset);
-  let qasr = document.getElementById('qasr');
-  let nomadOne = document.getElementById('nomadOne');
-  let nomadTwo = document.getElementById('nomadTwo');
-  let nomadThree = document.getElementById('nomadThree');
-  let nomadFour = document.getElementById('nomadFour');
-  let camel = document.getElementById('camel');
-  let britishOne = document.getElementById('britishOne');
-  let britishTwo = document.getElementById('britishTwo');
-  let trucial = document.getElementById('trucial');
-  let british = document.getElementById('uk');
-  let uae = document.getElementById('uaeFlag');
 
 
   //Fade out camel, extra men 1000
@@ -156,12 +171,5 @@ window.addEventListener('scroll', () => {
     uae.classList.remove("hidden");
     uae.classList.add("visable");
   }
-
-
-
-  // text fade in/out 
-
-  // console.log(scroll/height)
-
 })
 
