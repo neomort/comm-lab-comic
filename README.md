@@ -12,7 +12,7 @@ Next, we used Illustrator to make SVGs of some of the most prominent buildings i
   
 Once we had all the elements, an idea about how to implement them and a wireframe to look back to, we just had to put all the elements together, though this was much harder than what we anticipated.  
 
-We used VS code Live share and a Python script in order to work on the same document from three computers at once. This was fast and convienient because we could see how what we were adding to the site interacted with our partner's elements in real time. 
+We used VS code Live share and a Python script in order to work on the same document from three computers at once. This was fast and convenient because we could see how what we were adding to the site interacted with our partner's elements in real time. 
   
 The first part of the comic, which appears when the page first loads, consists of a brown background gradient overlayed with particles which symbolize sand, like the sands of time. We used a [Javascript library](https://github.com/VincentGarreau/particles.js?fbclid=IwAR0Dd8qIfWN6RI1Zk06vzH5GWA0Z0ZijwnoIgFmIXwQyFFCcWBUzLtt8myU) which allowed us to create these particles, play with their positioning and adjust their interactivity elements, such as where newer particles would appear and accumulate upon clicking on the screen. 
 
