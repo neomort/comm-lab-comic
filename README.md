@@ -19,5 +19,5 @@ The comic ends with the celebration of the 50th National Day of the UAE, where w
 We made our comic interactive in several different ways. The behavior of the "particles" at the top of the page and "fireworks" at the bottom of the page has already been discussed above. We also discussed how certain images stick and then stop sticking to the bottom when the user has scrolled through a certain part of the comic. Other than that, the colors of the background sky and that of the ground also change as we scroll through the comic.
 
 ### Reflection
-
+Although we formed our group and started working on this assignment a little late, we still managed to comfortably get done with whatever we had planned. Coming up with a solid idea and a wireframe to refer to really helped a lot and made the process a lot simpler for us. Although some parts of the work got tiring and time consuming, they allowed us to understand different ways of doing things and we managed to pull through. Overall, we are very satisfied with the final version of the comic since we were not only able to do whatever we had decided at the beginning but we also implemented a couple of features which were not part of the original plan, such as interacting with the sand particles and the fireworks.
 
